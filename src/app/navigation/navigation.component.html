@@ -1,0 +1,45 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Acceuil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nos Valeurs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Produits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+
+
+  <div class="logo">
+    <a href="https://www.creative-tim.com" class="simple-text logo-mini">
+      <div class="logo-img">
+          <img src="./assets/img/angular2-logo-white.png"/>
+      </div>
+    </a>
+    <a href="https://www.creative-tim.com" class="simple-text logo-normal">
+        Creative Tim
+    </a>
+</div>
+<div class="sidebar-wrapper">
+    <ul class="nav">
+        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+            <a [routerLink]="[menuItem.path]">
+                <i class="now-ui-icons {{menuItem.icon}}"></i>
+                <p>{{menuItem.title}}</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
